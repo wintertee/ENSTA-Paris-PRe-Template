@@ -6,7 +6,7 @@ Ce dépôt contient le modèle LaTeX pour les rapports de Projet de recherche (P
 
 ## Utilisation
 
-1. Téléchargez ce dépôt sous forme de fichier zip.
+1. [Téléchargez ce dépôt sous forme de fichier zip](https://github.com/wintertee/ENSTA-Paris-PRe-Template/archive/refs/heads/main.zip).
 2. Créez un nouveau projet en téléchargeant le fichier zip sur [Overleaf](https://www.overleaf.com/).
 3. Utilisez le compilateur XeLaTeX pour compiler le projet.
 
