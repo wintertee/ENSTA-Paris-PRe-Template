@@ -1,0 +1,28 @@
+\def\enstaLogo{ensta.jpg} % Logo de l'école
+\def\hostLogo{ensta.jpg} % Logo de l'entreprise ou de l'institut de recherche
+\def\documentTitle{Projet de Recherche (PRe)} % Titre du document
+\def\speciality{Informatique} % Spécialité
+\def\academicYear{2023-2024} % Année académique
+\def\title{Application de l'IA à l'analyse des données} % Titre du projet
+\def\authorName{Jean Dupont} % Nom de l'auteur
+\def\schoolTutor{Pierre Martin} % Nom du tuteur de l'école
+\def\classPromotion{2026} % Promotion
+\def\hostTutor{Lucie Lefevre} % Tuteur à l'entreprise ou à l'institut de recherche
+\def\internshipDuration{Stage éffectué du 01/06/2023 au 31/08/2023} % Durée du stage
+\def\hostName{Institut de Recherche en Informatique} % Nom de l'entreprise ou de l'institut de recherche
+\def\hostAddress{123 rue de la Science, 75000 Paris - France} % Adresse de l'entreprise ou de l'institut de recherche
+\setboolean{confidential}{true} % Confidentialité du rapport
+\setboolean{onlinePublish}{true} % Publication en ligne autorisée
+
+
+% Pied de page personnalisé
+\fancyfoot[C]{
+    \textit{\MyFooter}\par
+    {\color{red}\textit{
+        Rapport 
+        \ifthenelse{\boolean{confidential}}{confidentiel}{non confidentiel et
+        \ifthenelse{\boolean{onlinePublish}}{publiable}{non publiable}
+        sur internet}}
+        }
+}
+\rfoot{\thepage}

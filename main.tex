@@ -1,0 +1,31 @@
+\documentclass{ensta_paris_pre_rapport} % Utilisation du modèle de rapport de l'ENSTA Paris
+\input{setup}
+\begin{document}
+
+% Inclusion des différentes sections du rapport
+\input{content/titlepage} % Page de titre
+~\newpage
+\input{content/abstract} % Résumé
+~\newpage
+\input{content/acknowledgement} % Remerciements
+
+% Table des matières
+\tableofcontents
+\newpage
+
+% Table des figures
+\listoffigures
+\newpage
+
+\input{content/section1} % Section 1
+
+\newpage
+\bibliographystyle{plain} % Style de la bibliographie
+\bibliography{ref.bib} % Fichier de références bibliographiques
+\addcontentsline{toc}{section}{Bibliographie}
+
+\newpage
+\appendix
+\input{content/appendix} % Annexes
+
+\end{document}

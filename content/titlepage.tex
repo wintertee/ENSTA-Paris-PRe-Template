@@ -1,0 +1,45 @@
+
+\begin{titlepage}
+	\includegraphics[height=4cm]\enstaLogo
+	\hfill
+	\includegraphics[height=4cm]\hostLogo
+	\par\vspace{0.5cm}
+	\centering % Everything on this page will be centered
+	    
+	\vspace*{\fill} % Vertically center the page contents
+	
+	    
+	\textbf{\Huge \documentTitle}\par\vspace{1.5cm}
+	\textbf{\Large Spécialité : \speciality}\par\vspace{0.5cm}
+	\textbf{\Large Année scolaire : \academicYear}\par\vspace{1.5cm}
+	{\Huge\bfseries \title}\par\vspace{1cm}
+	\vspace{1cm}
+	\fcolorbox{red}{white}{\parbox{0.8\linewidth} {
+		\centering
+		\vspace{0.3cm}
+		\color{red}\textbf{\Large Mention de confidentialité}\par
+		\vspace{0.3cm}
+		\textbf{ 
+			\ifthenelse{\boolean{confidential}}{le document est confidentiel}{le document est non confidentie. \ifthenelse{\boolean{onlinePublish}}{Il peut donc être consultable en ligne par tous.}{et consultable au format électronique uniquement sur place à la bibliothèque de l'ENSTA Paris.}}
+		}
+		\vspace{0.3cm}
+		}
+	}
+	    
+	\vspace{1cm}
+	\begin{multicols}{2}
+		\textbf{\small Auteur :\authorName}\par
+		\textbf{\small Tuteur ENSTA Paris : \schoolTutor}\par
+		\columnbreak
+		\textbf{\small Promotion: \classPromotion}\par
+		\textbf{\small Tuteur organisme d'accueil : \hostTutor}\par
+	\end{multicols}
+	\par\vspace{1cm}
+	\textbf{\large\internshipDuration}\par\vspace{1cm}
+	{\raggedleft
+		\textbf{NOM de l'organisme d'accueil : \hostName}\par
+		\textbf{Adresse : \hostAddress}\par
+	}
+	    
+	\vspace*{\fill} % Vertically center the page contents
+\end{titlepage}
