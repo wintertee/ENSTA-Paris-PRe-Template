@@ -1,0 +1,31 @@
+on:
+  push:
+    branches:
+    - release
+    tags:
+    - "v*"
+
+name: Release
+
+jobs:
+  release-xelatex:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+        name: checkout code
+      - uses: xu-cheng/texlive-action/full@v1
+        with:
+          run: |
+            latexmk main.tex -halt-on-error -time -xelatex
+        name: build with XeLaTeX
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref }}
+          body: "New release ${{ github.ref }}"
+          draft: false
+          prerelease: false
+          files: |
+            main.pdf
