@@ -1,5 +1,7 @@
 # Modèle LaTeX pour le rapport du PRe à ENSTA Paris
 
+Tournez ★ en ⭐ (coin supérieur droit) si vous aimez le projet !
+
 [EN](README_en.md)
 
 Ce dépôt contient le modèle LaTeX pour les rapports de Projet de recherche (PRe) à l'ENSTA Paris.
